@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<style name="Base.Theme.NiXZanList" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Personalizando o tema escuro -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+</style>
+</resources>
