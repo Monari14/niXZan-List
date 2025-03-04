@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DadosActivity"></activity>
+        <activity android:name=".CriarTabelaActivity"></activity>
 
     </application>
 

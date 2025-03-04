@@ -5,50 +5,45 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
 import android.widget.TextView;
-import android.widget.Toast;
-import androidx.appcompat.widget.AppCompatImageView;
+
 import java.util.List;
 
-public class MyAdapter extends ArrayAdapter<ItemModel> {
+public class MyAdapter extends ArrayAdapter<String> {
 
     private Context context;
-    private List<ItemModel> items;
+    private List<String> tableNames;  // Lista de nomes de tabelas
     private DatabaseHelper dbHelper;
 
-    public MyAdapter(Context context, List<ItemModel> items) {
-        super(context, 0, items);
+    public MyAdapter(Context context, List<String> tableNames) {
+        super(context, 0, tableNames);
         this.context = context;
-        this.items = items;
+        this.tableNames = tableNames;
         this.dbHelper = new DatabaseHelper(context);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        // Verifica se a view já foi inflada, se não, infla uma nova
         if (convertView == null) {
-            convertView = LayoutInflater.from(context).inflate(R.layout.item_list, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_table, parent, false); // item_table é o layout do item na lista
         }
 
-        ItemModel item = items.get(position);
+        // Pega o nome da tabela na posição atual
+        String tableName = tableNames.get(position);
 
-        TextView description = convertView.findViewById(R.id.item_description);
-        CheckBox checkBox = convertView.findViewById(R.id.item_checkbox);
-        AppCompatImageView deleteBtn = convertView.findViewById(R.id.delete_button);
+        // Pega o TextView do layout onde vamos exibir o nome da tabela
+        TextView tableNameTextView = convertView.findViewById(R.id.table_name);  // Assumindo que existe um TextView com id "table_name"
 
-        description.setText(item.getDescription());
-        checkBox.setChecked(item.isChecked());
+        // Define o nome da tabela no TextView
+        tableNameTextView.setText(tableName);
 
-        checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            dbHelper.updateChecked(item.getId(), isChecked);
-            item.setChecked(isChecked);
-        });
-
-        deleteBtn.setOnClickListener(v -> {
-            dbHelper.deleteItem(item.getId());
-            items.remove(position);
-            notifyDataSetChanged();
-            Toast.makeText(context, "Excluído!", Toast.LENGTH_SHORT).show();
+        // Define o que acontece quando um item é clicado (exemplo: abrir a lista de itens dessa tabela)
+        convertView.setOnClickListener(v -> {
+            // Exemplo: você pode abrir uma nova Activity passando o nome da tabela
+            // Intent intent = new Intent(context, ItemListActivity.class);
+            // intent.putExtra("tableName", tableName); // Passa o nome da tabela para a próxima Activity
+            // context.startActivity(intent);
         });
 
         return convertView;

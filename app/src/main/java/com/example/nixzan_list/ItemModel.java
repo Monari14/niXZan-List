@@ -25,7 +25,7 @@ public class ItemModel {
     public String getCreatedAt() { return createdAt; }
     public void setCreatedAt(String createdAt) { this.createdAt = createdAt; }
 
-    // retorna a data atual
+    // Retorna a data atual em formato de timestamp
     public static String getCurrentDate() {
         return String.valueOf(System.currentTimeMillis());
     }
