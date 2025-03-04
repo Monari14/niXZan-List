@@ -48,7 +48,7 @@ public class MyAdapter extends ArrayAdapter<ItemModel> {
             dbHelper.deleteItem(item.getId());
             items.remove(position);
             notifyDataSetChanged();
-            Toast.makeText(context, "Item excluído", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Excluído!", Toast.LENGTH_SHORT).show();
         });
 
         return convertView;
