@@ -27,9 +27,6 @@
 - **Linguagem:** Java  
 - **Banco de Dados:** SQLite  
 
-## 📋 Documentação  
-Para uma documentação detalhada do projeto, incluindo como adicionar, marcar e excluir itens, consulte: <a href="https://github.com/Monari14/niXZan-List/documentacao/">Documentação niXZan - List</a>.
-
 ## 📄 Licença  
 Este projeto é de propriedade exclusiva de Felipe Eduardo Monari. Nenhuma parte deste código pode ser modificada, distribuída ou utilizada sem a permissão explícita do autor.
 
