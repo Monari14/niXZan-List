@@ -32,9 +32,9 @@
 - **Banco de Dados:** SQLite  
 
 ## 📄 Licença  
-<p align="justify">
-  Este projeto é de propriedade exclusiva de Felipe Eduardo Monari. Nenhuma parte deste código pode ser modificada, distribuída ou utilizada sem a permissão explícita do autor.
-</p>
 <p align="center">
+  
+Este projeto está disponível publicamente, mas é importante lembrar que a modificação, distribuição ou uso sem permissão não é permitido. Para mais detalhes sobre os direitos e restrições, consulte a [Licença](LICENSE).
+
 © 2025 Felipe Eduardo Monari. Todos os direitos reservados.
 </p>
