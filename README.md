@@ -8,7 +8,9 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Monari14/niXZan-List?style=for-the-badge)
 
 ## 📜 Descrição  
-**niXZan - List** é um aplicativo para **Android**, desenvolvido em **Java**, onde o usuário pode adicionar **itens**, **tarefas** ou qualquer outro tipo de anotação à lista de forma simples e organizada. O app salva os dados localmente usando **SQLite**, garantindo que os itens e suas marcações (como itens concluídos) permaneçam mesmo após o fechamento do app.  
+<p align="justify">
+<strong>niXZan - List</strong> é um aplicativo para <strong>Android</strong>, desenvolvido em <strong>Java</strong>, onde o usuário pode adicionar <strong>itens</strong>, <strong>tarefas</strong> ou qualquer outro tipo de anotação à lista de forma simples e organizada. O app salva os dados localmente usando <strong>SQLite</strong>, garantindo que os itens e suas marcações (como itens concluídos) permaneçam mesmo após o fechamento do app.
+</p>
 
 ## 📌 Funcionalidades  
 - ➕ **Adicionar itens/tarefas/etc.** à lista  
