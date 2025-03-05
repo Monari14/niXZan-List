@@ -9,7 +9,7 @@
 
 ## 📜 Descrição  
 <p align="justify">
-<strong>niXZan - List</strong> é um aplicativo para <strong>Android</strong>, desenvolvido em <strong>Java</strong>, onde o usuário pode adicionar <strong>itens</strong>, <strong>tarefas</strong> ou qualquer outro tipo de anotação à lista de forma simples e organizada. O app salva os dados localmente usando <strong>SQLite</strong>, garantindo que os itens e suas marcações (como itens concluídos) permaneçam mesmo após o fechamento do app.
+  <strong>niXZan - List</strong> é um aplicativo para <strong>Android</strong>, desenvolvido em <strong>Java</strong>, onde o usuário pode adicionar <strong>itens</strong>, <strong>tarefas</strong> ou qualquer outro tipo de anotação à lista de forma simples e organizada. O app salva os dados localmente usando <strong>SQLite</strong>, garantindo que os itens e suas marcações (como itens concluídos) permaneçam mesmo após o fechamento do app.
 </p>
 
 ## 📌 Funcionalidades  
@@ -19,10 +19,12 @@
 - 📂 **Persistência de dados com SQLite**  
 
 ## 🚀 Fluxo do Sistema  
-1. **Adicionar itens**: O usuário insere um novo **item/tarefa/etc.** na lista.  
-2. **Marcar como concluído**: Cada **item/tarefa** possui um checkbox para ser marcado como feito.  
-3. **Persistência de dados**: Os **itens/tarefas** e seus status são armazenados no SQLite, garantindo que os concluídos continuem marcados ao reabrir o app.  
-4. **Excluir itens**: O usuário pode remover **itens/tarefas** individualmente usando o ícone da lixeira.  
+<p align="justify">
+  1. **Adicionar itens**: O usuário insere um novo **item/tarefa/etc.** na lista.  
+  2. **Marcar como concluído**: Cada **item/tarefa** possui um checkbox para ser marcado como feito.  
+  3. **Persistência de dados**: Os **itens/tarefas** e seus status são armazenados no SQLite, garantindo que os concluídos continuem marcados ao reabrir o app.  
+  4. **Excluir itens**: O usuário pode remover **itens/tarefas** individualmente usando o ícone da lixeira.  
+</p>
 
 ## 🛠️ Tecnologias Utilizadas  
 - **Plataforma:** Android  
@@ -30,6 +32,9 @@
 - **Banco de Dados:** SQLite  
 
 ## 📄 Licença  
-Este projeto é de propriedade exclusiva de Felipe Eduardo Monari. Nenhuma parte deste código pode ser modificada, distribuída ou utilizada sem a permissão explícita do autor.
-
+<p align="justify">
+  Este projeto é de propriedade exclusiva de Felipe Eduardo Monari. Nenhuma parte deste código pode ser modificada, distribuída ou utilizada sem a permissão explícita do autor.
+</p>
+<p align="center">
 © 2025 Felipe Eduardo Monari. Todos os direitos reservados.
+</p>
